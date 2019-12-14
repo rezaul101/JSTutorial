@@ -1,9 +1,4 @@
 
-// Guess what answers you would get if you ran this in the
-// Javascript Console in Google Chrome. Once you have an answer  to the questions then 
-// check them by copying them and running it in the console yourself line by line 
-
-
 //Evaluate the below:
 5 + "34"
 5 - "4"
