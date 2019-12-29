@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+        <h1 id="username"></h1>
+        <p id="post"></p>
+    
+</body>
+<script>
+    var database = [
+    {
+        username: "reza",
+        password: "password"
+    }
+    ];
+    
+    var newsFeed = [
+        {
+            username: "reza",
+            timeline: "Hellow Everybody!"
+        },
+        {
+            username: "Reza",
+            timeline: "Some thing is better then nothing"
+        }
+    ];
+
+
+    var puname = prompt("Your username: reza");
+    var pp = prompt("Password: password");
+
+
+
+    function singIn(puser, ppass) {
+        if (puser === database[0].username &&  ppass === database[0].password) {
+            console.log(newsFeed);
+            alert("Login Success!");
+
+            document.getElementById("username").innerHTML = "reza!";
+            document.getElementById("post").innerHTML = "Thanks For Login!!";
+
+        }else{
+            alert("Wrong user name and password");
+        }
+    }
+
+    singIn(puname,pp);
+</script>
+</html>
