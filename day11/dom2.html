@@ -1,0 +1,50 @@
+ <html>
+<body>
+<style>
+.test{
+color:red;
+}
+</style>
+
+<h1>DOM Selectors</h1>
+
+<ul>
+<li>getElementsByTagName</li>
+<li>getElementsByClassName</li>
+<li>getElementById</li>
+
+<li>querySelector</li>
+<li>querySelectorAll</li>
+
+<li>getAttribute</li>
+<li>setAttribute</li>
+
+<li>##Changing Styles</li>
+<li>style.{property} //ok</li>
+
+<li>className //best</li>
+<li>classList //best</li>
+
+<li>classList.add</li>
+<li>classList.remove</li>
+<li>classList.toggle</li>
+
+<li>innerHTML //DANGEROUS</li>
+
+<li>parentElement</li>
+<li>children</li>
+</ul>
+
+<h2>Example</h2>
+<p id="p2">--------------</p>
+
+<p id="demo"> hello</p>
+
+<script>
+document.getElementById("p2").style.color = "blue";
+document.querySelector("li").classList.add("test");
+document.getElementById("demo").innerHTML = "Hello World!";
+</script>
+
+</body>
+</html> 
