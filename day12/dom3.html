@@ -1,0 +1,29 @@
+ <html>
+<body>
+
+
+
+<h2>Example</h2>
+<h4> 01. JavaScript addEventListener()</h4>
+<p>This example uses the addEventListener() method to execute a function when a user clicks on a button.</p>
+<button id="myBtn">Try it</button>
+
+<h4> 02. The onchange Event</h4>
+Enter your name: <input type="text" id="fname" onchange="myFunction()">
+
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+
+
+<script>
+document.getElementById("myBtn").addEventListener("click", myFunction);
+function myFunction() {
+  alert ("Hello World!");
+}
+
+</script>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html> 
